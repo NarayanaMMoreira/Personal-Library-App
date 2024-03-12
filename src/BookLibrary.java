@@ -32,9 +32,13 @@ public class BookLibrary {
 
     public void printInformations(){
         int i = 1;
-        for (Books book : bookList){
-            System.out.println(i + " - " + book.getTitle());
-            i++;
+        if (bookList.isEmpty()){
+            System.out.println("You don't have any books yet!");
+        } else {
+            for (Books book : bookList){
+                System.out.println(i + " - " + book.getTitle());
+                i++;
+            }
         }
     }
 }
