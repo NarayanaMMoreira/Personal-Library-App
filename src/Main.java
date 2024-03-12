@@ -17,7 +17,7 @@ public class Main {
                     System.out.println("Enter the following data: ");
                     System.out.println("Tittle: ");
                     String tittle = scanner.nextLine();
-                    S3ystem.out.println("Author: ");
+                    System.out.println("Author: ");
                     String author = scanner.nextLine();
                     System.out.println("Genre: ");
                     String genre = scanner.nextLine();
