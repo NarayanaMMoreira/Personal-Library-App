@@ -30,16 +30,27 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.println("Enter the book title you want to remove: ");
-                    String titleToRemove = scanner.nextLine();
-                    library.removeBookByTitle(titleToRemove);
+                    int empty = library.bookEmpty();
+                    if (empty == 0){
+                        break;
+                    } else {
+                        System.out.println("Enter the book title you want to remove: ");
+                        String titleToRemove = scanner.nextLine();
+                        library.removeBookByTitle(titleToRemove);
+                    }
                     break;
 
                 case 3:
-                    library.printInformations();
+                    empty = library.bookEmpty();
+                    if (empty == 0){
+                        break;
+                    } else {
+                        library.printInformations();
+                    }
                     break;
 
                 case 4:
+                    System.out.println("Have a good day!");
                     break;
             }
         } while (validation != 4);
